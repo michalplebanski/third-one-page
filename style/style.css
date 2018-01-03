@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Sumana" rel="stylesheet");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Saira Semi Condensed', serif;
+	display: none;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+button:hover {
+	opacity: 0.6;
+}
+
+.col-h-1 {width: 8.33%;}
+.col-h-2 {width: 16.66%;}
+.col-h-3 {width: 25%;}
+.col-h-4 {width: 33.33%;}
+.col-h-5 {width: 41.66%;}
+.col-h-6 {width: 50%;}
+.col-h-7 {width: 58.33%;}
+.col-h-8 {width: 66.66%;}
+.col-h-9 {width: 75%;}
+.col-h-10 {width: 83.33%;}
+.col-h-11 {width: 91.66%;}
+.col-h-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+}
+
+.row:before, 
+.row:after {
+	content:"";
+	display: table ;
+	clear:both;
+ }
+
+.jumbotron {
+	display: flex;
+	flex-direction: column;
+	background-image: url("https://wholeyoga.files.wordpress.com/2017/02/6778203421_d1e1b219df_o.jpg?w=660&h=440&crop=1");
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100vh;
+	color: #fff;
+	justify-content: space-between;
+}
+
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar ul li {
+	padding: 0 30px;
+	font-size: 1.4rem;
+}
+
+.navbar li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+}
+
+.navbar li:hover a {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slogan {
+	align-self: center;
+	text-align: center;
+}
+
+.slogan h2, .slogan p {
+	margin: 0;
+}
+
+.slogan h2, .join h2 {
+	font-size: 2.3rem;
+	letter-spacing: 4px;
+}
+
+.slogan p, .slogan button, .home h2, .design h2, .join p, .download h2 {
+	font-size: 1.8rem;
+}
+
+.slogan button, .home button {
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5%;
+	border: none;
+	background-color: #26aa17;
+	color: #fff;
+	cursor: pointer;
+}
+
+button, .slogan h2, .home h2, .design h2, .photoapp h3, .join h2, .download button, .download h2, .rights h3 {
+	text-transform: uppercase;
+}
+
+.social-media {
+	align-self: center;
+	font-size: 1.8rem;
+	padding: 10px;
+}
+
+.social-media i {
+	margin: 0 20px;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.social-media i:hover {
+	opacity: 0.4;
+}
+
+.home {
+	background-color: #eae1e1;
+	min-height: 80vh;
+	text-align: left;
+}
+
+.home h2, .design h2, .download h2 {
+	color: #1f7502;
+}
+
+.home button {
+	margin: 20px 0;
+}
+
+.home p, .home button, .design p {
+	font-size: 1.4rem;
+}
+
+.home .row > div {
+	padding: 70px;
+}
+
+.home .row > div:last-child button {
+	background-color: #ff0000;
+}
+
+.design .row div {
+	min-height: 55vh;
+	text-align: left;
+}
+
+.design .row div:first-child {
+	background-image: url("https://www.bocanews.com/wp-content/uploads/2016/04/Untitled-design2.jpg");
+	background-size: cover;
+	min-height: 400px;
+}
+
+.design .row div:last-child {
+	padding: 0 30px;
+}
+
+.photoapp {
+	background-color: #eae1e1;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.photoapp .row > div {
+	height: 250px;
+	background-size: cover;
+}
+
+.photoapp i {
+	font-size: 3rem;
+	color: #1f7502;
+}
+
+.photoapp h3 {
+	font-size: 1.5rem;
+}
+
+.photoapp p {
+	font-size: 1rem;
+}
+
+.photoapp .row > div:nth-child(2) {
+	background-image: url("../img/livello-5.png");
+}
+
+.photoapp .row > div:last-child {
+	background-image: url("../img/livello-6.png");
+}
+
+.join {
+	min-height: 100vh;
+	background-image: url("../img/livello-3.png");
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+
+.send-button {
+	cursor: pointer;
+}
+
+.download {
+	background-color: #eae1e1;
+	padding: 80px 0;
+	text-align: center;
+}
+
+.download h2 {
+	margin: 0;
+}
+
+.download p {
+	padding-bottom: 10px;
+	font-size: 1.4rem;
+}
+
+.download button {
+	margin: 0 60px;
+	padding: 10px 80px 10px 5px;
+	text-align: left;
+	background-color: #1f7502;
+	border: none;
+	border-radius: 8%;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+
+}
+
+ .download button i {
+	font-size: 24px;
+	position: relative;
+	left: 70px;
+	padding: 10px; 
+
+} 
+
+.rights {
+	padding: 30px 0;
+}
+
+.rights h3 {
+	display: inline-block;
+}
+
+.rights h3, .rights p {
+	padding: 0 20px;
+}
+
+.rights h3:nth-child(2) {
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-color: #1f7502;
+}
+
+@media (max-width: 876px) {
+
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+
+	.jumbotron {
+		display: flex;
+	}
+
+	.navbar ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	.navbar ul li {
+		padding: 15px;
+		font-size: 1rem;
+	}
+
+	.slogan {
+		padding: 60px 0;
+	}
+
+	.slogan h2 {
+		font-size: 2rem;
+	}
+
+	.slogan p {
+		font-size: 1.4rem;
+	}
+
+	.slogan button {
+		font-size: 1rem;
+		padding: 10px;
+	}
+
+	.home h2, .design h2, .photoapp h3, .join h2, .download h2, .download button i, .rights h3 {
+		font-size: 1.5rem;
+	}
+
+	.home p, .design p, .photoapp p, .download p, .download button, .rights p {
+		font-size: 0.9rem;
+	}
+
+	.home button {
+		font-size: 1rem;
+		padding: 9px;
+	}
+
+	.home, .design .row > div, .rights {
+		text-align: center;
+	}
+
+	.home .row > div {
+		padding: 30px 10px;
+	}
+
+	.design .row >div:last-child {
+		padding: 60px 10px;	
+	}
+
+	.photoapp {
+		padding: 40px 0;
+	}
+
+	.photoapp .row > div:first-child {
+		height: 200px;
+	}
+
+	.photoapp .row > div:nth-child(2), .photoapp .row > div:last-child {
+		margin: 0;
+	}
+
+	.join {
+		display: flex;
+	}
+
+	.join .info {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 30px 0;
+	}
+
+	.download {
+		padding: 40px 0;
+	}
+
+	.download p {
+		padding: 0 10px;
+	}
+
+	.download button {
+		padding: 10px 20px;
+		margin: 30px 60px;
+		border: 1px solid;
+	}
+
+	.download button i {
+		position: static;
+	}
+}
+
+@media (max-width: 500px) {
+	.navbar ul li {
+		padding: 12px;
+	}
+
+	.slogan {
+		padding: 30px 0;
+	}
+
+	.slogan h2 {
+		font-size: 1.3rem;
+	}
+
+	.slogan p, .social-media {
+		font-size: 0.9rem;
+	}
+
+	.slogan button {
+		font-size: 0.6rem;
+		padding: 7px;
+	}
+
+	.home h2, .design h2, .photoapp h3, .join h2, .download h2, .download button i, .rights h3 {
+		font-size: 1rem;
+	}
+
+	.home p, .design p, .photoapp p, .download p, .rights p {
+		font-size: 0.6rem;
+	}
+
+	.home button {
+		font-size: 0.6rem;
+		padding: 7px;
+	}
+
+	.home .row > div {
+		padding: 10px;
+	}
+
+	.design .row >div:last-child {
+		padding: 30px 10px;	
+	}
+
+	.photoapp .row > div:first-child {
+		max-height: 300px;
+	}
+
+	.photoapp .row > div {
+		min-height: 20vh;
+	}
+
+	.download button {
+		padding: 4px;
+		font-size: 0.6rem;
+		margin: 0;
+	}
+}
