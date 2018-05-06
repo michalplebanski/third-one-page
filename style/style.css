@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Sumana" rel="stylesheet");
 
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 body {
@@ -58,20 +59,31 @@ button:hover {
  }
 
 .jumbotron {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	background-image: url("https://wholeyoga.files.wordpress.com/2017/02/6778203421_d1e1b219df_o.jpg?w=660&h=440&crop=1");
 	background-attachment: fixed;
 	background-size: cover;
 	min-height: 100vh;
 	color: #fff;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .navbar ul {
 	list-style-type: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .navbar ul li {
@@ -90,7 +102,9 @@ button:hover {
 }
 
 .slogan {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	text-align: center;
 }
 
@@ -122,7 +136,9 @@ button, .slogan h2, .home h2, .design h2, .photoapp h3, .join h2, .download butt
 }
 
 .social-media {
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 	font-size: 1.8rem;
 	padding: 10px;
 }
@@ -216,9 +232,15 @@ button, .slogan h2, .home h2, .design h2, .photoapp h3, .join h2, .download butt
 	background-image: url("../img/livello-3.png");
 	background-size: cover;
 	background-attachment: fixed;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-align: center;
 	color: #fff;
 }
@@ -297,13 +319,22 @@ button, .slogan h2, .home h2, .design h2, .photoapp h3, .join h2, .download butt
 	.col-m-12 {width: 100%;}
 
 	.jumbotron {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
 	.navbar ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		padding: 0;
 	}
 
@@ -367,13 +398,21 @@ button, .slogan h2, .home h2, .design h2, .photoapp h3, .join h2, .download butt
 	}
 
 	.join {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
 	.join .info {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		padding: 30px 0;
 	}
 
